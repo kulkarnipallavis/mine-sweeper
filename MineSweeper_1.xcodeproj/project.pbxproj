@@ -13,6 +13,7 @@
 		71CA62891E32754B00ED8DC5 /* MineSweeper_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71CA62871E32754B00ED8DC5 /* MineSweeper_1.xcdatamodeld */; };
 		71CA628B1E32754B00ED8DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CA628A1E32754B00ED8DC5 /* Assets.xcassets */; };
 		71CA628E1E32754B00ED8DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CA628C1E32754B00ED8DC5 /* LaunchScreen.storyboard */; };
+		71CA62981E32946100ED8DC5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CA62971E32946100ED8DC5 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		71CA628A1E32754B00ED8DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71CA628D1E32754B00ED8DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71CA628F1E32754B00ED8DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CA62971E32946100ED8DC5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				71CA628C1E32754B00ED8DC5 /* LaunchScreen.storyboard */,
 				71CA628F1E32754B00ED8DC5 /* Info.plist */,
 				71CA62871E32754B00ED8DC5 /* MineSweeper_1.xcdatamodeld */,
+				71CA62971E32946100ED8DC5 /* CustomButton.swift */,
 			);
 			path = MineSweeper_1;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				71CA62831E32754B00ED8DC5 /* ViewController.swift in Sources */,
 				71CA62891E32754B00ED8DC5 /* MineSweeper_1.xcdatamodeld in Sources */,
 				71CA62811E32754B00ED8DC5 /* AppDelegate.swift in Sources */,
+				71CA62981E32946100ED8DC5 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

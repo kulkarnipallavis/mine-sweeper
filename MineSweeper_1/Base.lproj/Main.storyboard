@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MineSweeper_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-CF-H4U">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="865-zI-rcu"/>
+                                    <constraint firstAttribute="height" constant="40" id="bvb-0u-Zey"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qjy-PN-BtL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="tdF-fd-3eZ"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyP-K2-uBg">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="BBA-Qo-5JF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="QO2-HE-L0w"/>
+                                    <constraint firstAttribute="height" constant="40" id="yiP-Bk-uOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEc-h8-mpf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9979515659326661" blue="0.92059682987172098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zqu-CF-H4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQZ-ai-qI4"/>
+                            <constraint firstItem="DyP-K2-uBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYx-gs-dCs"/>
+                            <constraint firstItem="zqu-CF-H4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="VIL-Q2-Umf"/>
+                            <constraint firstItem="DyP-K2-uBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAP-Px-g1d"/>
+                            <constraint firstItem="zqu-CF-H4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="abp-uC-DPD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DyP-K2-uBg" secondAttribute="bottom" constant="50" id="rC4-q2-6D8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newGameButton" destination="DyP-K2-uBg" id="CBB-Cb-62X"/>
+                        <outlet property="smileyButton" destination="zqu-CF-H4U" id="Cqj-zA-MdD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="-32.833583208395808"/>
         </scene>
     </scenes>
 </document>
